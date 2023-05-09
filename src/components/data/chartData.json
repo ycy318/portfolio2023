@@ -1,0 +1,168 @@
+{
+    "getChartData": {
+        "list": [
+            {
+                "chartTitle": "JS",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#0154A6",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "CSS & HTML",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#FFB847",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "JAVA",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#EE1C24",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "photoshop",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#4DC3C3",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "docker",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#07B9FC",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "SQL",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#FFE63B",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "PPT",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#FC007F",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "Excel",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#CC72F5",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            },
+            {
+                "chartTitle": "English",
+                "chartData": {
+                    "datasets": [
+                        {
+                            "backgroundColor": [
+                                "#FD4703",
+                                "#F9F9F9"
+                            ],
+                            "data": [
+                                10,
+                                5
+                            ],
+                            "cutout": "80%"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
