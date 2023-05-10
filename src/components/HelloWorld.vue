@@ -3,7 +3,7 @@
     <div id="nav">
       <h1>
         <div id="icon"></div>
-        Nick's Portflio /
+        Nick's portfolio /
         <p>web development</p>
       </h1>
 
@@ -110,102 +110,11 @@
           </div>
         </div>
       </div>
-      <div class="section">
-        <div class="slide" v-for="(item, idx) in sliderData" :key="idx">
-          <div id="contentArea" class="section2">
-            <div class="sliderTitle">
-              <p id="no">{{ item.no }}</p>
-              <p id="title">{{ item.title }}</p>
-            </div>
-            <div id="idonknow">
-              <div id="sliderArea">
-                <div class="monitor">
-                  <img id="monitor" :src="item.imgPath1" />
-                </div>
-                <div class="monitor">
-                  <img id="monitor" :src="item.imgPath2" />
-                </div>
-                <div class="monitor">
-                  <img id="monitor" :src="item.imgPath3" />
-                </div>
-              </div>
-            </div>
-            <div id="sliderDescription">
-              애국가의 자취는 조선 후기 개화기와 갑오개혁 직후까지 올라간다.
-              1896년 당시 독립문 정초식에서 배재학당 학생들에 의해 그 유명한
-              스코틀랜드 민요 올드 랭 사인의 멜로디에 맞춰 불린 작사 미상인
-              '무궁화 노래' 가 원류로 여겨진다. 공식적으로 배재학도들이 부른
-              것은 '조선가', '독립가', '진보가' 이 3개이고 다른 학원 학생들도
-              여러 애국가를 불렀다는데 참여한 학당 중 밀러학당이 있었고 여기서
-              부른 것으로 추정되는 '최초의 무궁화 노래' 에 후렴 "무궁화 삼천리
-              화려강산 죠션 사람 죠션으로 길이 보죤하세" 라는 가사가 지금의
-              애국가 가사에서도 맥을 이어 변형(조선→대한)되어 쓰이고 있는 데서
-              확인할 수 있다. 이 때는 한 해에 수십 개의 애국가가 쏟아져 나왔다.
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="section" id="section3">
         <div id="contentArea">
           <div id="introduce">
             <v-row no-gutters>
-              <v-col cols="5" md="5" sm="12">
-                <div class="chartZone">
-                  <div class="zoneTitle">
-                    <div class="waviy">
-                      <span style="--i: 1">s</span>
-                      <span style="--i: 2">k</span>
-                      <span style="--i: 3">i</span>
-                      <span style="--i: 4">l</span>
-                      <span style="--i: 5">l</span>
-                      <span style="--i: 6">s</span>
-                    </div>
-                  </div>
-                  <div class="chartBody">
-                    <div
-                      class="chartArea"
-                      v-for="(item, idx) in getChart.getChartData.list"
-                      :key="idx"
-                    >
-                      <div id="chart">
-                        <Doughnut
-                          :data="item.chartData"
-                          :options="chartOptions"
-                          :chart-id="chartId"
-                          :style="style"
-                        ></Doughnut>
-                      </div>
-                      <div
-                        id="chartTitle"
-                        :style="`color : ${item.chartData.datasets[0].backgroundColor[0]}`"
-                      >
-                        {{ item.chartTitle }}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="hashTagArea">
-                  <div class="hashTag">
-                    <vue-typer
-                      :text="[
-                        '#MBTI : ENFP',
-                        '#긍정적 #끈기 #꼼꼼함',
-                        '#리더십 #호주청년',
-                      ]"
-                      :repeat="Infinity"
-                      :shuffle="false"
-                      initial-action="typing"
-                      :pre-type-delay="70"
-                      :type-delay="70"
-                      :pre-erase-delay="3000"
-                      :erase-delay="250"
-                      erase-style="select-all"
-                      :erase-on-complete="false"
-                      caret-animation="smooth"
-                    ></vue-typer>
-                  </div>
-                </div>
-              </v-col>
               <v-col cols="7" md="7" sm="12" class="experience">
                 <div class="experienceTitle">
                   <div class="rotatingText-content">
@@ -238,8 +147,128 @@
                     </div>
                   </tiny-slider>
                 </div>
+                <div>
+                  <div class="hashTagArea">
+                    <div class="hashTag">
+                      <vue-typer
+                        :text="[
+                          '#MBTI : ENFP',
+                          '#긍정적 #끈기 #꼼꼼함',
+                          '#리더십 #호주청년',
+                        ]"
+                        :repeat="Infinity"
+                        :shuffle="false"
+                        initial-action="typing"
+                        :pre-type-delay="70"
+                        :type-delay="70"
+                        :pre-erase-delay="3000"
+                        :erase-delay="250"
+                        erase-style="select-all"
+                        :erase-on-complete="false"
+                        caret-animation="smooth"
+                      ></vue-typer>
+                    </div>
+                  </div>
+                </div>
+              </v-col>
+              <v-col cols="5" md="5" sm="12">
+                <div class="abutMe">
+                  <div class="experience0">
+                    <div class="title0">
+                      <div class="waviy">
+                        <span style="--i: 1">E</span>
+                        <span style="--i: 2">x</span>
+                        <span style="--i: 3">p</span>
+                        <span style="--i: 4">e</span>
+                        <span style="--i: 5">r</span>
+                        <span style="--i: 6">i</span>
+                        <span style="--i: 7">e</span>
+                        <span style="--i: 8">n</span>
+                        <span style="--i: 9">c</span>
+                        <span style="--i: 10">e</span>
+                      </div>
+                    </div>
+                    <div class="experienceArea">
+                      <h4
+                        v-for="(item, idx) in getExperienceData.list"
+                        :key="idx"
+                        id="experienceDetail"
+                      >
+                        <span class="when">{{ item.when }}</span>
+                        <span class="detail">{{ item.detail }}</span>
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div class="chartZone">
+                    <div class="zoneTitle">
+                      <div class="waviy">
+                        <span style="--i: 1">s</span>
+                        <span style="--i: 2">k</span>
+                        <span style="--i: 3">i</span>
+                        <span style="--i: 4">l</span>
+                        <span style="--i: 5">l</span>
+                        <span style="--i: 6">s</span>
+                      </div>
+                    </div>
+                    <div class="chartBody">
+                      <div
+                        class="chartArea"
+                        v-for="(item, idx) in getChart.getChartData.list"
+                        :key="idx"
+                      >
+                        <div id="chart">
+                          <Doughnut
+                            :data="item.chartData"
+                            :options="chartOptions"
+                            :chart-id="chartId"
+                            :style="style"
+                          ></Doughnut>
+                        </div>
+                        <div
+                          id="chartTitle"
+                          :style="`color : ${item.chartData.datasets[0].backgroundColor[0]}`"
+                        >
+                          {{ item.chartTitle }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </v-col>
             </v-row>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div id="contentArea" class="section2">
+          <div id="section2">
+            <h3 class="sectionTitleArea">
+              <h3 class="sectionTitle">Projects</h3>
+              <p id="point">.</p>
+            </h3>
+            <p class="sectionSubTitle">몇 가지 프로젝트 작업물을 소개합니다.</p>
+            <div class="projectArea">
+              <div
+                class="projectItem"
+                v-for="(item, idx) in projectImgItem"
+                :key="idx"
+                @mouseover="mouseover(idx)"
+                @mouseout="mouseout(idx)"
+              >
+                <div v-show="item.flag" class="ImgDetail">
+                  <div class="responsive">
+                    <div class="res">responsive</div>
+                    <div class="resTitle">{{ item.title }}</div>
+                    <div class="resline"></div>
+                    <div class="resdetail">
+                      <span>- 참여율 100%</span>
+                    </div>
+                  </div>
+                </div>
+                <img class="itemImg" :src="item.Url" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,6 +280,7 @@
 <script>
 // import "fullpage.js/dist/fullpage.min.css";
 import getChartData from "./data/chartData.json";
+import getExperienceData from "./data/experienceData.json";
 import VueTinySlider from "vue-tiny-slider";
 import { VueTyper } from "vue-typer";
 import { Doughnut } from "vue-chartjs";
@@ -302,7 +332,14 @@ export default {
       console.log(Index);
     },
   },
-  methods: {},
+  methods: {
+    mouseover(idx) {
+      this.projectImgItem[idx].flag = true;
+    },
+    mouseout(idx) {
+      this.projectImgItem[idx].flag = false;
+    },
+  },
   props: {
     chartId: {
       type: String,
@@ -311,6 +348,21 @@ export default {
   },
   data() {
     return {
+      projectImgItem: [
+        { flag: true, Url: "/imgs/aquaponics.png", title: "Framework" },
+        { flag: false, Url: "/imgs/aquaponics.png", title: "아쿠아포닉스" },
+        {
+          flag: false,
+          Url: "/imgs/aquaponics.png",
+          title: "스마트 물자관리 시스템",
+        },
+        {
+          flag: false,
+          Url: "/imgs/aquaponics.png",
+          title: "울주 방재창고 관리",
+        },
+      ],
+      getExperienceData: getExperienceData,
       imgItems: [
         "골목상권.jpg",
         "노마드.jpg",
@@ -326,7 +378,7 @@ export default {
         "SW품질캠프경진대회(대상)",
       ],
       getChart: getChartData,
-      style: "width: 100px; height: 100px;",
+      style: "width: 5em; height: 5em;",
       chartOptions: {
         animation: {
           duration: 3000,
@@ -396,6 +448,25 @@ export default {
   }
 }
 
+.when {
+  margin-left: 3%;
+}
+.detail {
+  margin-left: 3%;
+}
+.experience0 {
+  margin: 0 auto;
+  width: 100%;
+  height: 40%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title0 {
+  width: 75%;
+}
 .rotatingText-adjective {
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
@@ -425,7 +496,11 @@ export default {
     animation: rotate-text-up 3s 6s reverse infinite;
   }
 }
-
+.abutMe {
+  margin-top: 18%;
+  // border: 1px solid;
+  // background-color: rgba(128, 128, 128, 0.488);
+}
 // Animations
 @keyframes rotate-text-up {
   0% {
@@ -461,7 +536,15 @@ export default {
 <style >
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poor+Story&display=swap");
+#experienceDetail {
+  font-size: 1.2em;
+}
+#chartTitle {
+  font-size: 0.8em;
+  font-weight: 900;
+}
 
 .hashTag {
   /* position: absolute; */
@@ -472,8 +555,8 @@ export default {
   /* width: 64%; */
   /* color: aqua !important; */
   height: 100px;
-  font-size: 40px;
-  background-color: #7afbfb40;
+  font-size: 1.2em;
+  /* background-color: #7afbfb40; */
   border-radius: 10px;
   padding: 0 10%;
 }
@@ -585,6 +668,44 @@ export default {
   height: 50.3vh;
 }
 
+.resTitle {
+  position: relative;
+  top: 53%;
+  font-weight: 600;
+  font-size: 25px;
+  color: WHITE;
+}
+.resline {
+  margin-top: 5%;
+  background-color: #fff;
+  height: 0.5%;
+  width: 80%;
+  position: relative;
+  top: 50%;
+}
+
+.resdetail {
+  font-size: 20px;
+  position: relative;
+  top: 58%;
+  color: WHITE;
+}
+
+.res {
+  color: #d0adef;
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  /* position: absolute; */
+  /* margin-top: 45%; */
+  top: 50%;
+}
+.responsive {
+  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+}
+
 .experience button {
   display: none;
 }
@@ -595,23 +716,25 @@ export default {
   padding-bottom: 7.2%;
   height: 100%;
 }
-
+.experienceArea {
+  width: 75%;
+}
 .waviy {
   position: relative;
-  text-align: center;
-  font-size: 50px;
+  text-align: left;
+  font-size: 2em;
 }
 .waviy span {
   font-family: "Alfa Slab One", cursive;
   position: relative;
   display: inline-block;
-  color: black;
+  color: #162690;
   text-transform: uppercase;
-  animation: waviy 2.5s infinite;
-  animation-delay: calc(0.1s * var(--i));
+  /* animation: waviy 5s infinite;
+  animation-delay: calc(0.1s * var(--i)); */
   opacity: 0.8;
 }
-@keyframes waviy {
+/* @keyframes waviy {
   0%,
   40%,
   100% {
@@ -620,16 +743,24 @@ export default {
   20% {
     transform: translateY(-20px);
   }
-}
+} */
 .chartBody {
-  margin-left: -9%;
+  margin-left: -5%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 9%;
-}
+  grid-template-columns: repeat(4, 1fr);
 
+  height: 100%;
+  gap: 5%;
+  /* width: 76%; */
+}
+.zoneTitle {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  /* border: 1px solid; */
+  width: 75%;
+}
 .chartZone {
-  height: 465px;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -644,8 +775,8 @@ export default {
 .chartArea {
   text-align: center;
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  /* width: 100%; */
+  height: 73%;
 }
 .experience {
   width: 800px;
@@ -661,20 +792,7 @@ export default {
   display: flex;
   color: black;
 }
-#sliderDescription {
-  color: #1e1e1e;
-  margin-top: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
-}
 
-.sliderTitle #title {
-  margin-top: 30px;
-  margin-left: 20px;
-
-  font-size: 55px;
-  color: #000;
-}
 @font-face {
   font-family: "NanumSquareNeo-Variable";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
@@ -682,25 +800,12 @@ export default {
   font-weight: 400;
   font-style: normal;
 }
-.sliderTitle {
-  display: flex;
-  margin-left: 70px;
-  /* text-align: center; */
-  font-family: "NanumSquareNeo-Variable";
-  width: 100%;
-  height: 130px;
-  font-size: 80px;
-}
 
 #no {
   font-family: "Roboto Mono", monospace;
   display: inline-block;
   color: #ffa901;
   font-weight: 1000;
-}
-#idonknow {
-  width: 1383.59px;
-  height: 455px;
 }
 
 #sliderArea {
@@ -711,14 +816,6 @@ export default {
   width: 100%;
   height: 50%;
   gap: 1%;
-}
-.monitor {
-  width: 30%;
-  height: 100%;
-}
-#monitor {
-  width: 100%;
-  height: 73%;
 }
 
 #varValue {
@@ -1012,9 +1109,65 @@ a:-webkit-any-link {
 }
 #contentArea.section2 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
 }
+#section2 {
+  color: black;
+  width: 80%;
+  height: 100%;
+}
+.ImgDetail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+  background-color: rgba(122, 70, 165, 0.95);
+}
+.sectionTitleArea {
+  width: 100%;
+  text-align: center;
+}
+
+.sectionTitle {
+  margin-top: 6%;
+  font-family: "IBM Plex Mono", monospace;
+  display: inline-block;
+  font-size: 4em;
+  font-weight: 500;
+}
+#point {
+  display: inline-block;
+  color: #162690;
+  font-size: 3em;
+}
+
+.projectArea {
+  width: 100%;
+  height: 72%;
+  border: 1px solid black;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+}
+.sectionSubTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em;
+}
+.itemImg {
+  width: 100%;
+  height: 100%;
+}
+.projectItem {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
 #icon {
   width: 25px;
   height: 25px;
@@ -1079,5 +1232,13 @@ a:-webkit-any-link {
   .section {
     background-color: yellow;
   }
+}
+
+@font-face {
+  font-family: "TheJamsil5Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 </style>
