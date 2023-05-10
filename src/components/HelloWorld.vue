@@ -184,7 +184,27 @@
                     </div>
                   </div>
                 </div>
-                <div class="hashTagArea"></div>
+                <div class="hashTagArea">
+                  <div class="hashTag">
+                    <vue-typer
+                      :text="[
+                        '#MBTI : ENFP',
+                        '#긍정적 #끈기 #꼼꼼함',
+                        '#리더십 #호주청년',
+                      ]"
+                      :repeat="Infinity"
+                      :shuffle="false"
+                      initial-action="typing"
+                      :pre-type-delay="70"
+                      :type-delay="70"
+                      :pre-erase-delay="3000"
+                      :erase-delay="250"
+                      erase-style="select-all"
+                      :erase-on-complete="false"
+                      caret-animation="smooth"
+                    ></vue-typer>
+                  </div>
+                </div>
               </v-col>
               <v-col cols="7" md="7" sm="12" class="experience">
                 <div class="experienceTitle">
@@ -232,7 +252,7 @@
 // import "fullpage.js/dist/fullpage.min.css";
 import getChartData from "./data/chartData.json";
 import VueTinySlider from "vue-tiny-slider";
-
+import { VueTyper } from "vue-typer";
 import { Doughnut } from "vue-chartjs";
 import { Chart, ArcElement } from "chart.js";
 Chart.register(ArcElement);
@@ -241,13 +261,13 @@ export default {
   components: {
     Doughnut,
     "tiny-slider": VueTinySlider,
+    VueTyper,
   },
 
   mounted() {
     setInterval(() => {
-      if (this.titleIdx < 2) {
+      if (this.titleIdx < 3) {
         this.titleIdx++;
-        console.log("this.titleIdx", this.titleIdx);
       } else this.titleIdx = 0;
     }, 3000);
 
@@ -299,7 +319,12 @@ export default {
       ],
 
       titleIdx: 0,
-      experienceTitle: ["노마드 경진대회", "양창윤", "신희웅"],
+      experienceTitle: [
+        "관광콘텐츠 활용 창업경진대회(우수상)",
+        "LINC+ 창업노마드 캠프&아이디어 경진대회(대상) ",
+        "Crowd Testing 경진대회(대상)",
+        "SW품질캠프경진대회(대상)",
+      ],
       getChart: getChartData,
       style: "width: 100px; height: 100px;",
       chartOptions: {
@@ -363,7 +388,7 @@ export default {
 .rotatingText-description {
   font-family: "Georgia", serif;
   font-style: italic;
-  font-size: 14px;
+  font-size: 23px !important;
   margin: 0;
 
   @media (min-width: 768px) {
@@ -438,10 +463,27 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
 
+.hashTag {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  /* width: 64%; */
+  /* color: aqua !important; */
+  height: 100px;
+  font-size: 40px;
+  background-color: #7afbfb40;
+  border-radius: 10px;
+  padding: 0 10%;
+}
+
 .hashTagArea {
   width: 100%;
   height: 30%;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @keyframes text-focus-in {
   0% {
@@ -587,7 +629,6 @@ export default {
 }
 
 .chartZone {
-  border: 1px solid black;
   height: 465px;
   display: flex;
   flex-direction: column;
@@ -601,17 +642,14 @@ export default {
   align-items: center;
 }
 .chartArea {
-  border: 1px solid black;
   text-align: center;
   display: inline-block;
   width: 100px;
   height: 100px;
 }
 .experience {
-  border: 1px solid black;
   width: 800px;
   height: 700px;
-  border: 1px solid black;
 }
 
 #introduce {
@@ -621,13 +659,10 @@ export default {
   width: 100%;
   height: 100%;
   display: flex;
-  overflow-y: scroll;
   color: black;
-  border: 1px solid black;
 }
 #sliderDescription {
   color: #1e1e1e;
-  border: 1px solid black;
   margin-top: 10px;
   padding-left: 70px;
   padding-right: 70px;
@@ -804,11 +839,14 @@ export default {
   padding: 30px;
   position: fixed;
   z-index: 1;
-  margin: 0 100px;
-  display: flex;
-  justify-content: space-between;
+  /* margin: 0 auto; */
+  margin: 0 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  /* display: flex; */
   width: 80%;
-  height: 160px;
+  height: 100px;
+  justify-content: space-between;
 }
 
 .v-timeline-item {
